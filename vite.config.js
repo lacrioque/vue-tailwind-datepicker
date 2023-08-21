@@ -8,9 +8,10 @@ import dts from 'vite-plugin-dts'
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/entry.js'),
+      entry: path.resolve(__dirname, 'src/entry.esm.js'),
       name: 'VueTailwindDatepicker',
-      fileName: `vue-tailwind-datepicker`
+      fileName: `vue-tailwind-datepicker`,
+      formats: ['es']
     },
     rollupOptions: {
       external: ['vue'],

@@ -109,7 +109,7 @@ declare namespace _sfc_main {
         expose: any;
         emit: any;
     }): {
-        useCurrentDate: (date: any) => any[];
+        useCurrentDate: (date: any) => any;
         useDisableDate: (date: any, { disableDate }: {
             disableDate: any;
         }) => any;
@@ -171,7 +171,7 @@ declare namespace _sfc_main {
                 date: () => any[];
                 month: any;
                 year: any;
-                years: () => any[];
+                years: () => any;
                 onPrevious: () => void;
                 onNext: () => void;
                 onPreviousYear: () => void;
@@ -185,7 +185,7 @@ declare namespace _sfc_main {
                 date: () => any[];
                 month: any;
                 year: any;
-                years: () => any[];
+                years: () => any;
                 onPrevious: () => void;
                 onNext: () => void;
                 onPreviousYear: () => void;
@@ -318,16 +318,14 @@ declare namespace _sfc_main {
             };
         }, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
             [key: string]: any;
-        }> | import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-            [key: string]: any;
-        }>[], unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+        }>, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
             as: {
                 type: (StringConstructor | ObjectConstructor)[];
                 default: string;
             };
         }>>, {
             as: string | Record<string, any>;
-        }>;
+        }, {}>;
         readonly PopoverButton: import("vue").DefineComponent<{
             as: {
                 type: (StringConstructor | ObjectConstructor)[];
@@ -336,6 +334,10 @@ declare namespace _sfc_main {
             disabled: {
                 type: BooleanConstructor[];
                 default: boolean;
+            };
+            id: {
+                type: StringConstructor;
+                default: () => string;
             };
         }, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
             [key: string]: any;
@@ -348,10 +350,15 @@ declare namespace _sfc_main {
                 type: BooleanConstructor[];
                 default: boolean;
             };
+            id: {
+                type: StringConstructor;
+                default: () => string;
+            };
         }>>, {
             as: string | Record<string, any>;
             disabled: boolean;
-        }>;
+            id: string;
+        }, {}>;
         readonly PopoverPanel: import("vue").DefineComponent<{
             as: {
                 type: (StringConstructor | ObjectConstructor)[];
@@ -369,6 +376,10 @@ declare namespace _sfc_main {
                 type: BooleanConstructor;
                 default: boolean;
             };
+            id: {
+                type: StringConstructor;
+                default: () => string;
+            };
         }, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
             [key: string]: any;
         }> | import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
@@ -390,12 +401,17 @@ declare namespace _sfc_main {
                 type: BooleanConstructor;
                 default: boolean;
             };
+            id: {
+                type: StringConstructor;
+                default: () => string;
+            };
         }>>, {
             as: string | Record<string, any>;
             unmount: boolean;
             static: boolean;
+            id: string;
             focus: boolean;
-        }>;
+        }, {}>;
         readonly PopoverOverlay: import("vue").DefineComponent<{
             as: {
                 type: (StringConstructor | ObjectConstructor)[];
@@ -430,7 +446,7 @@ declare namespace _sfc_main {
             as: string | Record<string, any>;
             unmount: boolean;
             static: boolean;
-        }>;
+        }, {}>;
         readonly dayjs: any;
         readonly localeData: any;
         readonly localizedFormat: any;
@@ -454,7 +470,7 @@ declare namespace _sfc_main {
         expose: any;
         emit: any;
     }): {
-        useCurrentDate: (date: any) => any[];
+        useCurrentDate: (date: any) => any;
         useDisableDate: (date: any, { disableDate }: {
             disableDate: any;
         }) => any;
@@ -516,7 +532,7 @@ declare namespace _sfc_main {
                 date: () => any[];
                 month: any;
                 year: any;
-                years: () => any[];
+                years: () => any;
                 onPrevious: () => void;
                 onNext: () => void;
                 onPreviousYear: () => void;
@@ -530,7 +546,7 @@ declare namespace _sfc_main {
                 date: () => any[];
                 month: any;
                 year: any;
-                years: () => any[];
+                years: () => any;
                 onPrevious: () => void;
                 onNext: () => void;
                 onPreviousYear: () => void;
@@ -663,16 +679,14 @@ declare namespace _sfc_main {
             };
         }, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
             [key: string]: any;
-        }> | import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-            [key: string]: any;
-        }>[], unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+        }>, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
             as: {
                 type: (StringConstructor | ObjectConstructor)[];
                 default: string;
             };
         }>>, {
             as: string | Record<string, any>;
-        }>;
+        }, {}>;
         readonly PopoverButton: import("vue").DefineComponent<{
             as: {
                 type: (StringConstructor | ObjectConstructor)[];
@@ -681,6 +695,10 @@ declare namespace _sfc_main {
             disabled: {
                 type: BooleanConstructor[];
                 default: boolean;
+            };
+            id: {
+                type: StringConstructor;
+                default: () => string;
             };
         }, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
             [key: string]: any;
@@ -693,10 +711,15 @@ declare namespace _sfc_main {
                 type: BooleanConstructor[];
                 default: boolean;
             };
+            id: {
+                type: StringConstructor;
+                default: () => string;
+            };
         }>>, {
             as: string | Record<string, any>;
             disabled: boolean;
-        }>;
+            id: string;
+        }, {}>;
         readonly PopoverPanel: import("vue").DefineComponent<{
             as: {
                 type: (StringConstructor | ObjectConstructor)[];
@@ -714,6 +737,10 @@ declare namespace _sfc_main {
                 type: BooleanConstructor;
                 default: boolean;
             };
+            id: {
+                type: StringConstructor;
+                default: () => string;
+            };
         }, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
             [key: string]: any;
         }> | import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
@@ -735,12 +762,17 @@ declare namespace _sfc_main {
                 type: BooleanConstructor;
                 default: boolean;
             };
+            id: {
+                type: StringConstructor;
+                default: () => string;
+            };
         }>>, {
             as: string | Record<string, any>;
             unmount: boolean;
             static: boolean;
+            id: string;
             focus: boolean;
-        }>;
+        }, {}>;
         readonly PopoverOverlay: import("vue").DefineComponent<{
             as: {
                 type: (StringConstructor | ObjectConstructor)[];
@@ -775,7 +807,7 @@ declare namespace _sfc_main {
             as: string | Record<string, any>;
             unmount: boolean;
             static: boolean;
-        }>;
+        }, {}>;
         readonly dayjs: any;
         readonly localeData: any;
         readonly localizedFormat: any;

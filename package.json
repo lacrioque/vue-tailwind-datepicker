@@ -5,8 +5,9 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vue-tailwind-datepicker.umd.js",
-  "module": "./dist/vue-tailwind-datepicker.mjs",
+  "type": "module",
+  "main": "./dist/vue-tailwind-datepicker.js",
+  "module": "./dist/vue-tailwind-datepicker.js",
   "types": "./dist/types.d.ts",
   "exports": {
     ".": {
