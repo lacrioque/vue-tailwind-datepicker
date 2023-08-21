@@ -1,4 +1,4 @@
-import { d as i } from "./entry.esm.39e50f83.mjs";
+import { d as i } from "./entry.esm.f972d0ed.js";
 import "vue";
 var _ = {
   s: "ein paar Sekunden",

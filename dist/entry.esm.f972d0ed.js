@@ -2270,7 +2270,7 @@ const en = ["disabled", "placeholder"], tn = { class: "absolute inset-y-0 right-
     }), we(() => {
       const c = e.i18n;
       Ie(() => {
-        const p = /* @__PURE__ */ Object.assign({ "./locale/de-at.js": () => import("./de-at.1293a2ac.mjs"), "./locale/de-ch.js": () => import("./de-ch.401f5397.mjs"), "./locale/de.js": () => import("./de.6bf46f42.mjs"), "./locale/en.js": () => import("./en.c289298e.mjs"), "./locale/fr-ch.js": () => import("./fr-ch.84637f89.mjs"), "./locale/fr.js": () => import("./fr.c9ea59c3.mjs"), "./locale/it-ch.js": () => import("./it-ch.6809ac35.mjs"), "./locale/it.js": () => import("./it.0c5f834b.mjs"), "./locale/tr.js": () => import("./tr.76cb41ea.mjs") });
+        const p = /* @__PURE__ */ Object.assign({ "./locale/de-at.js": () => import("./de-at.bec9399d.js"), "./locale/de-ch.js": () => import("./de-ch.896339c4.js"), "./locale/de.js": () => import("./de.9e23c92c.js"), "./locale/en.js": () => import("./en.2ebd8b28.js"), "./locale/fr-ch.js": () => import("./fr-ch.a36d0fff.js"), "./locale/fr.js": () => import("./fr.e91e57b7.js"), "./locale/it-ch.js": () => import("./it-ch.7ac257da.js"), "./locale/it.js": () => import("./it.ca70da19.js"), "./locale/tr.js": () => import("./tr.baa43ecc.js") });
         for (const k in p)
           p[k]().then(() => {
             d.locale(c);

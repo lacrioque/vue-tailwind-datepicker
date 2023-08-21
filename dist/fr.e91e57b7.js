@@ -1,4 +1,4 @@
-import { d as r } from "./entry.esm.39e50f83.mjs";
+import { d as r } from "./entry.esm.f972d0ed.js";
 import "vue";
 var a = {
   name: "fr",
